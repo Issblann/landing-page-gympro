@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Numans&family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --header: #0f0f0f;
+  --bg: #242424;
+  --paragraph: #a7a9be;
+  --second-color-and-button: #ff8906;
+  --text: #fffffe;
+  --tertiary: #f25f4c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  text-decoration: none;
+}
+
+/* header */
+
+header {
+  background: var(--header);
+  padding: 0 20px;
+  height: 4.06em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 144px;
+  padding: 7px;
+  margin-left: 29px;
+}
+
+.navbar {
+  display: flex;
+  gap: 70px;
+}
+.navbar__list {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.list__link a {
+  color: var(--text);
+}
+
+.iniciar-sesion a {
+  color: var(--second-color-and-button);
+  font-weight: 600;
+}
+.register a {
+  color: var(--tertiary);
+  font-weight: 600;
+}
+
+.lista li:first-child > a {
+  font-weight: 800;
+}
+
+main {
+  width: 100%;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* hero */
+
+#hero {
+  width: 100%;
+  margin-bottom: 71px;
+  height: 43.7rem;
+  max-width: 75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5em;
+}
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 3.9rem;
+  gap: 10px;
+  padding: 1.25em 0.62em;
+  width: 40.62rem;
+  height: 37.5rem;
+}
+
+.hero__text h1 {
+  font-size: 6.25rem;
+}
+
+.hero__text h3 {
+  font-size: 2.75rem;
+  color: var(--paragraph);
+  opacity: 0.4;
+  width: 23.75rem;
+  margin-bottom: 4.31rem;
+}
+.hero__text a {
+  width: 10rem;
+  border-radius: 2.81rem;
+  padding: 0.62em;
+  text-align: center;
+  color: var(--text);
+  background: var(--second-color-and-button);
+}
+
+.hero__img {
+  position: relative;
+  width: 25rem;
+  height: 37.5rem;
+}
+.hero__img--men {
+  position: absolute;
+  top: 1.18rem;
+  right: 10.5rem;
+  width: 30.5rem;
+}
+.hero__img--women {
+  position: absolute;
+  width: 23.2rem;
+  top: 3.4rem;
+  left: 0.12rem;
+}
+
+/* About us */
+
+#about {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.about__title {
+  font-size: 30px;
+}
+#about p {
+  width: 70%;
+  color: var(--paragraph);
+  font-family: "Numans";
+}
+.about__cards {
+  display: flex;
+  width: 800px;
+  padding: 20px;
+  gap: 50px;
+}
+.cards__card {
+  gap: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards__card img {
+  width: 100px;
+}
+
+/* planes */
+
+#planes {
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.planes__title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.planes__title span {
+  color: var(--tertiary);
+}
+
+.planes__container {
+  width: 80%;
+  gap: 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.planes__cards {
+  width: 350px;
+  height: 638px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--text);
+  color: var(--header);
+  margin-bottom: 20px;
+}
+
+.yellow__card {
+  height: 500px;
+}
+
+.cards__title {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  font-size: 25px;
+  background: var(--header);
+  color: var(--text);
+}
+
+.cards__title h4 {
+  font-weight: 400;
+}
+
+.cards__title span {
+  font-weight: 700;
+}
+.yellow {
+  background: var(--second-color-and-button);
+  color: black;
+}
+
+.cards__top {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards__top span {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.cards__mid {
+  background-color: var(--second-color-and-button);
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.cards__mid--yellow {
+  background: lightgray;
+}
+
+.cards__bot {
+  padding: 20px;
+}
+.cards__list {
+  list-style-position: inside;
+  color: var(--bg);
+  font-weight: 400;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.list__li::marker {
+  color: var(--second-color-and-button);
+}
+
+.planes__button {
+  color: var(--text);
+  background: var(--tertiary);
+  width: 26%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
