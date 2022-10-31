@@ -205,6 +205,7 @@ main {
   background: var(--text);
   color: var(--header);
   margin-bottom: 20px;
+  box-shadow: 6px 28px 55px -39px rgba(0, 0, 0, 0.52);
 }
 
 .yellow__card {
@@ -276,7 +277,7 @@ main {
   color: var(--second-color-and-button);
 }
 
-.planes__button {
+.button {
   color: var(--text);
   background: var(--tertiary);
   width: 26%;
@@ -285,4 +286,85 @@ main {
   border-radius: 20px;
   font-weight: 700;
   letter-spacing: 0.5px;
+}
+
+/* contactanos */
+
+#contactanos {
+  width: 100%;
+  background: var(--second-color-and-button);
+  display: flex;
+  margin-top: 50px;
+  gap: 70px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contactanos__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 30%;
+}
+
+.contactanos__title {
+  font-size: 30px;
+}
+
+.contactanos__parrafo {
+  color: var(--header);
+}
+
+.contactanos__form {
+  background: var(--header);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.form {
+  background: var(--bg);
+  color: var(--paragraph);
+  padding: 20px;
+  border-style: none;
+}
+
+.iframe {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.button__container {
+  text-align: center;
+}
+.submit {
+  width: 80%;
+}
+
+/* footer */
+
+footer {
+  background: var(--header);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 10px;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  color: var(--paragraph);
+}
+.footer__logo {
+  margin: 0;
 }
