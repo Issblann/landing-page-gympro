@@ -68,6 +68,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 100px;
 }
 /* hero */
 
@@ -80,6 +81,8 @@ main {
   justify-content: center;
   align-items: center;
   gap: 2.5em;
+  margin-top: 22px;
+  padding: 5px;
 }
 .hero__text {
   display: flex;
@@ -134,53 +137,54 @@ main {
 
 #about {
   width: 100%;
-  max-width: 1200px;
+  max-width: 75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .about__title {
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 #about p {
   width: 70%;
   color: var(--paragraph);
   font-family: "Numans";
+  margin-bottom: 20px;
 }
 .about__cards {
   display: flex;
-  width: 800px;
-  padding: 20px;
-  gap: 50px;
+  width: 41rem;
+  padding: 1.25em;
+  gap: 3.125em;
 }
 .cards__card {
-  gap: 20px;
-  padding: 20px;
+  gap: 1.25em;
+  padding: 1.25em;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .cards__card img {
-  width: 100px;
+  width: 125px;
 }
 
 /* planes */
 
 #planes {
-  width: 80%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 75rem;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 1.875em;
   align-items: center;
 }
 
 .planes__title {
   text-align: center;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .planes__title span {
@@ -188,16 +192,16 @@ main {
 }
 
 .planes__container {
-  width: 80%;
-  gap: 30px;
+  width: 90%;
+  gap: 40px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
 
 .planes__cards {
-  width: 350px;
-  height: 638px;
+  width: 21.875rem;
+  height: 40.875rem;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -209,7 +213,7 @@ main {
 }
 
 .yellow__card {
-  height: 500px;
+  height: 34.25rem;
 }
 
 .cards__title {
@@ -244,7 +248,7 @@ main {
 }
 
 .cards__top span {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
@@ -292,10 +296,14 @@ main {
 
 #contactanos {
   width: 100%;
-  background: var(--second-color-and-button);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/imgs/contacto/pexels-william-choquette-1954524.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
-  margin-top: 50px;
-  gap: 70px;
+  margin-top: 3.125em;
+  gap: 4.375em;
   justify-content: center;
   padding: 20px;
 }
@@ -309,10 +317,14 @@ main {
 
 .contactanos__title {
   font-size: 30px;
+  color: var(--text);
+  margin-left: 20px;
 }
 
 .contactanos__parrafo {
-  color: var(--header);
+  color: var(--paragraph);
+  font-weight: 700;
+  margin-left: 20px;
 }
 
 .contactanos__form {
@@ -331,8 +343,14 @@ main {
   border-style: none;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .iframe {
-  margin-top: 150px;
+  margin-top: 9.375rem;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -343,6 +361,7 @@ main {
 }
 .submit {
   width: 80%;
+  cursor: pointer;
 }
 
 /* footer */

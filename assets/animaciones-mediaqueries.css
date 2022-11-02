@@ -1,0 +1,87 @@
+/* animaciones */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 70px;
+}
+
+/* mediaqueries */
+:root {
+  --header: #0f0f0f;
+  --bg: #242424;
+  --paragraph: #a7a9be;
+  --second-color-and-button: #ff8906;
+  --text: #fffffe;
+  --tertiary: #f25f4c;
+}
+
+/* computadora */
+
+@media (max-width: 1020px) /* and (min-width: 992px) */ {
+  header {
+    padding: 10px;
+  }
+
+  .navbar {
+    gap: 36px;
+    font-size: 14px;
+  }
+
+  #hero {
+    height: unset;
+    flex-direction: column;
+  }
+
+  .hero__text {
+    align-items: center;
+  }
+
+  .hero__text h3 {
+    text-align: center;
+  }
+
+  .hero__text a {
+    width: 288px;
+    font-size: 26px;
+    height: 80px;
+    border-radius: 50px;
+  }
+
+  .hero__img--men {
+    top: 2.88px;
+    right: 40px;
+    width: 472px;
+  }
+
+  .hero__img--women {
+    width: 355.2px;
+    top: 44.8px;
+    left: 98.08px;
+  }
+
+  .planes__cards {
+    height: 702px;
+  }
+
+  .yellow__card {
+    height: 564px;
+  }
+  .contactanos__container {
+    width: 50%;
+  }
+
+  .iframe {
+    width: 50%;
+  }
+
+  #contactanos {
+    gap: 36.8px;
+  }
+}
+
+/* @media (max-width: 991px) {
+  .navbar {
+    gap: 40px;
+    font-size: 14px;
+  }
+} */

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="/assets/animaciones-mediaqueries.css" />
 
     <title>Gym Pro</title>
   </head>
@@ -24,9 +25,8 @@
         <ul class="navbar__list lista">
           <li class="list__link"><a href="#hero">Inicio </a></li>
           <li class="list__link"><a href="#about">About Us </a></li>
-          <li class="list__link"><a href="#">Sedes </a></li>
-          <li class="list__link"><a href="#">Planes </a></li>
-          <li class="list__link"><a href="#">Contáctanos </a></li>
+          <li class="list__link"><a href="#planes">Planes </a></li>
+          <li class="list__link"><a href="#contactanos">Contáctanos </a></li>
         </ul>
 
         <ul class="navbar__list register-iniciosesion">
@@ -65,12 +65,17 @@
         <h4 class="about__title">¿Quiénes Somos?</h4>
         <p>
           Somos un gimnasio que llegó a revolucionar la experiencia de tus
-          entrenamientos.
+          entrenamientos, si quieres levantar pesas, hacer cardio o simplemente
+          desconectarte, lo puedes hacer con nosotros.
         </p>
 
         <div class="about__cards">
           <div class="cards__card">
-            <img src="./assets/imgs/about/icons8-gym-64 (1).png" alt="cardio" />
+            <img
+              class="card"
+              src="./assets/imgs/about/icons8-gym-64 (1).png"
+              alt="cardio"
+            />
             <h4>ZONA CARDIO</h4>
             <p>
               No esperes por una caminadora, contamos con 100 maquinas de cardio
@@ -79,6 +84,7 @@
           </div>
           <div class="cards__card">
             <img
+              class="card"
               src="./assets/imgs/about/icons8-gym-64.png"
               alt="musculacion"
             />
@@ -176,7 +182,7 @@
             </div>
           </div>
         </div>
-        <a class="button" href="#">Comienza ahora</a>
+        <a class="button" href="/pages/register.html">Comienza ahora</a>
       </section>
 
       <section id="contactanos">
@@ -188,7 +194,7 @@
           <form class="contactanos__form" action="#">
             <input type="text" placeholder="Nombre*" class="form" />
             <input type="text" placeholder="Apellido*" class="form" />
-            <input type="tel" placeholder="Teléfono*" class="form" />
+            <input type="number" placeholder="Teléfono*" class="form" />
             <input type="email" placeholder="Email*" class="form" />
             <div class="button__container">
               <button class="button submit" type="submit">Enviar</button>
@@ -209,19 +215,18 @@
           ></iframe>
         </div>
       </section>
-
-      <footer>
-        <img
-          class="header__logo footer__logo"
-          src="/assets/imgs/Header/logo-Gym-Pro.png"
-          alt="logo"
-        />
-        <div class="footer__container">
-          <p>TODOS LOS DERECHOS RESERVADOS 2022 / GYM PRO</p>
-          <p>AVISO DE PRIVACIDAD</p>
-          <p>POLITICA DE PROTECCION DE DATOS</p>
-        </div>
-      </footer>
     </main>
+    <footer>
+      <img
+        class="header__logo footer__logo"
+        src="/assets/imgs/Header/logo-Gym-Pro.png"
+        alt="logo"
+      />
+      <div class="footer__container">
+        <p>TODOS LOS DERECHOS RESERVADOS 2022 / GYM PRO</p>
+        <p>AVISO DE PRIVACIDAD</p>
+        <p>POLITICA DE PROTECCION DE DATOS</p>
+      </div>
+    </footer>
   </body>
 </html>

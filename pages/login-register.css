@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Numans&family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --header: #0f0f0f;
+  --bg: #242424;
+  --paragraph: #a7a9be;
+  --second-color-and-button: #ff8906;
+  --text: #fffffe;
+  --tertiary: #f25f4c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: var(--text);
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.imagen__container {
+  width: 50%;
+  background: url(/assets/imgs/login/full-body-portrait-of-athletic-shirtless-male-doing-biceps-workouts-with-dumbbells-in-gym-club.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.imagen__container--register {
+  width: 50%;
+  background: url(/assets/imgs/register/pexels-cottonbro-7674484.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.info {
+  text-align: center;
+}
+.title {
+  text-align: center;
+  font-size: 2.1875rem;
+  color: var(--header);
+}
+
+.container__info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625em;
+}
+
+.form__container {
+  width: 100%;
+  max-width: 21.75rem;
+}
+.form {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.form input {
+  width: 100%;
+  height: 140%;
+  background: none;
+  color: var(--header);
+  padding-top: 20px;
+  border: none;
+  outline: 0px;
+}
+
+.label-email,
+.label-password,
+.label-fullname {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid var(--header);
+}
+
+.label-email::after,
+.label-password::after,
+.label-fullname::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid var(--tertiary);
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.email-texto,
+.password-texto,
+.fullname-texto {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3s ease;
+  color: var(--header);
+}
+
+input:focus + .label-email .email-texto,
+input:valid + .label-email .email-texto,
+input:focus + .label-password .password-texto,
+input:valid + .label-password .password-texto,
+input:focus + .label-fullname .fullname-texto,
+input:valid + .label-fullname .fullname-texto {
+  font-size: 0.875rem;
+  color: var(--tertiary);
+  transform: translateY(-150%);
+}
+
+input:focus + .label-email::after,
+input:focus + .label-password::after,
+input:focus + .label-fullname::after,
+input:valid + .label-email::after,
+input:valid + .label-password::after,
+input:valid + .label-fullname::after {
+  transform: translateX(0);
+}
+.parrafos {
+  font-size: 0.875rem;
+}
+.form__pregunta p {
+  text-align: right;
+  margin-top: 20px;
+  color: var(--tertiary);
+}
+
+.button__submit {
+  cursor: pointer;
+  color: var(--header);
+  font-weight: 700;
+  font-size: 0.9375rem;
+  padding: 1.25em;
+  display: flex;
+  justify-content: center;
+  background: var(--tertiary);
+  border: none;
+  margin-top: 1.25em;
+  border-radius: 1.875em;
+  width: 100%;
+  margin-bottom: 1.25em;
+}
+
+.register__button {
+  margin-top: 30px;
+}
+
+.iconos {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.fa-brands {
+  background: var(--second-color-and-button);
+  padding: 16px;
+  border-radius: 32px;
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.parrafo__final {
+  margin-top: 2.5rem;
+}
+
+.parrafo__final span {
+  color: var(--tertiary);
+  font-weight: 700;
+}
