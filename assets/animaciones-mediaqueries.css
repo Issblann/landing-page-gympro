@@ -1,5 +1,9 @@
 /* animaciones */
 
+#menu__toggle:checked ~ .overlay {
+  display: block;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding: 70px;
@@ -17,7 +21,7 @@ html {
 
 /* computadora */
 
-@media (max-width: 1020px) /* and (min-width: 992px) */ {
+@media (max-width: 1020px) {
   header {
     padding: 10px;
   }
@@ -25,6 +29,10 @@ html {
   .navbar {
     gap: 36px;
     font-size: 14px;
+  }
+  .header__logo {
+    padding: unset;
+    width: 120px;
   }
 
   #hero {
@@ -79,9 +87,168 @@ html {
   }
 }
 
-/* @media (max-width: 991px) {
-  .navbar {
-    gap: 40px;
-    font-size: 14px;
+/* tablet */
+
+@media (max-width: 767px) {
+  main {
+    gap: 50px;
   }
-} */
+  .header__logo {
+    width: 111px;
+  }
+  .navbar {
+    gap: 35px;
+  }
+  .lista {
+    position: absolute;
+    top: 64px;
+    width: 90%;
+    flex-direction: column;
+    background: var(--paragraph);
+    left: 5%;
+    right: 5%;
+    font-size: 15px;
+    padding: 45px 0;
+    gap: 40px;
+    z-index: 2;
+    display: none;
+  }
+
+  .fa-solid,
+  .fa-bars {
+    font-size: 30px;
+    margin-top: 10px;
+    color: white;
+  }
+
+  .menu__label {
+    display: flex;
+    cursor: pointer;
+    order: 2;
+  }
+
+  #menu__toggle:checked + .navbar__list {
+    display: flex;
+  }
+
+  .register-iniciosesion {
+    font-size: 13px;
+  }
+
+  .hero__img {
+    display: none;
+  }
+  .hero__text {
+    width: 100%;
+    gap: 50px;
+    justify-content: center;
+  }
+  .hero__text h1 {
+    font-size: 70px;
+  }
+
+  .hero__text h3 {
+    font-size: 30px;
+  }
+
+  .hero__text a {
+    width: 241px;
+    font-size: 24px;
+    height: 73px;
+  }
+
+  .about__cards {
+    width: 100%;
+  }
+
+  .planes__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .planes__cards {
+    width: 300px;
+    height: unset;
+  }
+
+  .button {
+    width: 36%;
+  }
+
+  #contactanos {
+    flex-direction: column;
+    align-items: center;
+    gap: unset;
+    background-position: 75%;
+  }
+
+  .iframe {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    font-size: 12px;
+  }
+  header {
+    gap: 0;
+  }
+  .header__logo {
+    width: 100px;
+    margin-left: 0;
+  }
+
+  .navbar {
+    gap: 20px;
+  }
+
+  .register-iniciosesion {
+    font-size: 13px;
+    gap: 7px;
+  }
+
+  .fa-solid,
+  .fa-bars {
+    font-size: 20px;
+  }
+  #hero {
+    margin: 0;
+  }
+
+  .hero__text {
+    margin: 0;
+  }
+  .hero__text h1 {
+    font-size: 50px;
+  }
+
+  .hero__text h3 {
+    width: 236px;
+    font-size: 20px;
+  }
+
+  .hero__text a {
+    width: 167px;
+    font-size: 15px;
+    justify-content: center;
+    height: 48px;
+  }
+  .cards__card img {
+    width: 85px;
+  }
+  .button {
+    width: 50%;
+  }
+
+  .contactanos__container {
+    width: 90%;
+  }
+
+  .iframe {
+    margin-top: 40px;
+  }
+
+  .footer__container {
+    font-size: 13px;
+  }
+}

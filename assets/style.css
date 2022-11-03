@@ -22,7 +22,7 @@
 header {
   background: var(--header);
   padding: 0 20px;
-  height: 4.06em;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
 }
@@ -60,6 +60,12 @@ header {
   font-weight: 800;
 }
 
+#menu__toggle,
+.menu__label {
+  display: none;
+}
+
+/* main */
 main {
   width: 100%;
   background: var(--bg);
@@ -69,6 +75,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 100px;
+  font-size: 16px;
 }
 /* hero */
 
@@ -178,13 +185,13 @@ main {
   max-width: 75rem;
   display: flex;
   flex-direction: column;
-  gap: 1.875em;
+  gap: 1.875rem;
   align-items: center;
 }
 
 .planes__title {
   text-align: center;
-  font-size: 1.875rem;
+  font-size: 1.87em;
 }
 
 .planes__title span {
@@ -222,7 +229,7 @@ main {
   padding: 10px;
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
-  font-size: 25px;
+  font-size: 1.5625em;
   background: var(--header);
   color: var(--text);
 }
@@ -248,7 +255,7 @@ main {
 }
 
 .cards__top span {
-  font-size: 2.5rem;
+  font-size: 2.5em;
   font-weight: 700;
 }
 
@@ -271,7 +278,7 @@ main {
   list-style-position: inside;
   color: var(--bg);
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.9375em;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -316,7 +323,7 @@ main {
 }
 
 .contactanos__title {
-  font-size: 30px;
+  font-size: 1.875em;
   color: var(--text);
   margin-left: 20px;
 }
@@ -345,6 +352,7 @@ main {
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
   -webkit-appearance: none;
   margin: 0;
 }
