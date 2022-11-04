@@ -1,0 +1,45 @@
+/* animaciones */
+
+/* mediaqueries */
+
+:root {
+  --header: #0f0f0f;
+  --bg: #242424;
+  --paragraph: #a7a9be;
+  --second-color-and-button: #ff8906;
+  --text: #fffffe;
+  --tertiary: #f25f4c;
+}
+
+@media (max-width: 768px) {
+  body {
+    color: white;
+  }
+
+  .title {
+    color: var(--text);
+  }
+  .imagen__container {
+    background: none;
+    width: 0;
+  }
+
+  .container__info {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+      url(/assets/imgs/login/full-body-portrait-of-athletic-shirtless-male-doing-biceps-workouts-with-dumbbells-in-gym-club.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .fullname-texto,
+  .email-texto,
+  .password-texto {
+    color: var(--paragraph);
+  }
+
+  .form input {
+    color: var(--text);
+  }
+}
