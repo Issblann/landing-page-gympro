@@ -1,14 +1,37 @@
 /* animaciones */
 
-#menu__toggle:checked ~ .overlay {
-  display: block;
-}
-
 html {
   scroll-behavior: smooth;
   scroll-padding: 70px;
 }
 
+#menu__toggle:checked ~ .overlay {
+  display: block;
+}
+
+.navbar ul li::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: var(--second-color-and-button);
+  position: absolute;
+  bottom: -8px;
+  transition: all 0.3s ease-out;
+}
+
+.navbar ul li:hover::before {
+  width: 100%;
+}
+
+.hero__text a:hover {
+  background: var(--header);
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.button:hover {
+  transition: all 0.3s ease-in-out;
+  background: var(--second-color-and-button);
+}
 /* mediaqueries */
 :root {
   --header: #0f0f0f;

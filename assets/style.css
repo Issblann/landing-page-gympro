@@ -24,6 +24,9 @@ header {
   padding: 0 20px;
   height: 4rem;
   display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
   justify-content: space-between;
 }
 
@@ -42,6 +45,10 @@ header {
   display: flex;
   align-items: center;
   list-style-type: none;
+}
+
+.list__link {
+  position: relative;
 }
 .list__link a {
   color: var(--text);
@@ -120,6 +127,7 @@ main {
   text-align: center;
   color: var(--text);
   background: var(--second-color-and-button);
+  transition: all 0.3s;
 }
 
 .hero__img {
@@ -297,6 +305,7 @@ main {
   border-radius: 20px;
   font-weight: 700;
   letter-spacing: 0.5px;
+  transition: all 0.3s ease-in-out;
 }
 
 /* contactanos */

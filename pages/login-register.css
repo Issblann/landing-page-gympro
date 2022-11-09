@@ -163,6 +163,7 @@ input:valid + .label-fullname::after {
   border-radius: 1.875em;
   width: 100%;
   margin-bottom: 1.25em;
+  transition: all 0.3s ease-in-out;
 }
 
 .register__button {
@@ -183,6 +184,7 @@ input:valid + .label-fullname::after {
   width: 50px;
   text-align: center;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .parrafo__final {

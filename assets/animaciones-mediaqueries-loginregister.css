@@ -1,5 +1,16 @@
 /* animaciones */
 
+.button__submit:hover {
+  transition: all 0.3s ease-in-out;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.fa-brands:hover {
+  transition: all 0.3s ease-in-out;
+  background: var(--header);
+  color: var(--text);
+}
 /* mediaqueries */
 
 :root {
